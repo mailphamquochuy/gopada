@@ -139,10 +139,106 @@
 		<div class = "col7"></div>
 	</div>
 	<div class = "info">
-		<div class = "col8"></div>
-		<div class = "col9"></div>
+		<div class = "col8">
+		<h2>Đây là website về Thời Trang</h2>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non malesuada libero. Maecenas vestibulum elit sit amet pellentesque aliquam. Integer cursus eleifend ante ac lacinia. Aenean tempus eget ante vel ornare. Proin nulla eros, pretium sed orci et, ultricies tempus nisi. Nam id urna quis tortor consectetur imperdiet sed vitae elit. Fusce molestie diam leo, quis aliquet quam vehicula congue. Maecenas et diam a purus condimentum suscipit. Nunc ut nibh lectus. Nullam convallis accumsan imperdiet. Nunc a porta sem. Vestibulum id sapien quis metus efficitur tempor ut et eros.
+		</div>
+		<div class = "col9">
+			<h2>MUA THEME NÀY</h2>
+			<div class = "payout">Trả trước:  
+				<form action = "" method = "">
+					<select name = "pay">
+						<option value = "0">Pay out</option>
+						<option value = "1">30%</option>
+						<option value = "2">50%</option>
+						<option value = "3">100%</option>
+					</select>
+				</form>
+			</div>
+			<div class = "permonth">Trả góp:  
+				<form action = "" method = "">
+					<select name = "permonth">
+						<option value = "0">Per month</option>
+						<option value = "1">Intro Company</option>
+						<option value = "2">Business</option>
+						<option value = "3">Shop cart </option>
+					</select>
+				</form>
+			</div>
+
+			<div class = "sumpay">Total:  
+				<form action = "" method = "">
+				<input type="number" name="sumpay" value="2,500,000 VNĐ" />
+				</form>
+			</div>
+
+			<div class = "submit">  
+				<form action = "" method = "">
+				<input type="submit" name="submit" value="Mua Ngay->" />
+				</form>
+			</div>
+
+		</div>
 	</div>
 </div>
+
+
+<div id = "wrap2">
+	<div class = "product">
+		<div class = "col4"></div>
+		<div class = "col5"></div>
+		<div class = "col6"></div>
+		<div class = "col7"></div>
+	</div>
+	<div class = "info">
+		<div class = "col8">
+		<h2>Đây là website về Thời Trang</h2>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non malesuada libero. Maecenas vestibulum elit sit amet pellentesque aliquam. Integer cursus eleifend ante ac lacinia. Aenean tempus eget ante vel ornare. Proin nulla eros, pretium sed orci et, ultricies tempus nisi. Nam id urna quis tortor consectetur imperdiet sed vitae elit. Fusce molestie diam leo, quis aliquet quam vehicula congue. Maecenas et diam a purus condimentum suscipit. Nunc ut nibh lectus. Nullam convallis accumsan imperdiet. Nunc a porta sem. Vestibulum id sapien quis metus efficitur tempor ut et eros.
+		</div>
+		<div class = "col9">
+			<h2>MUA THEME NÀY</h2>
+			<div class = "payout">Trả trước:  
+				<form action = "" method = "">
+					<select name = "pay">
+						<option value = "0">Pay out</option>
+						<option value = "1">30%</option>
+						<option value = "2">50%</option>
+						<option value = "3">100%</option>
+					</select>
+				</form>
+			</div>
+			<div class = "permonth">Trả góp:  
+				<form action = "" method = "">
+					<select name = "permonth">
+						<option value = "0">Per month</option>
+						<option value = "1">Intro Company</option>
+						<option value = "2">Business</option>
+						<option value = "3">Shop cart </option>
+					</select>
+				</form>
+			</div>
+
+			<div class = "sumpay">Total:  
+				<form action = "" method = "">
+				<input type="number" name="sumpay" value="2,500,000 VNĐ" />
+				</form>
+			</div>
+
+			<div class = "submit">  
+				<form action = "" method = "">
+				<input type="submit" name="submit" value="Mua Ngay->" />
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
 <!--End content wrap-->
 
 <!--Slide bottom-->
