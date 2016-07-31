@@ -1,0 +1,234 @@
+/*---reset css--*/
+div {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	background-color: #d8d8d8;
+	font-size: 12px;
+	font-family: Roboto, arial;
+	max-width: 960px;
+	margin: 0 auto;
+	/*border-left: 1px solid #a5a5a5;*/
+}
+
+a {
+	text-decoration: none;
+	color: #555555;
+}
+a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+li {
+	list-style: none;
+}
+
+
+/*-----TopNav----*/
+#topnav {
+	background-color: white;
+	border-bottom: 2px solid #888;
+	box-shadow: 2px 2px 1px #888888;
+	width: 100%;
+	height: 20px;
+	margin-top: -8px;
+
+}
+
+.hotmenu ul li {
+	float: left;
+	padding-left: 15px;
+	padding-top: 4px;
+
+
+}
+
+.cart {
+	float: right;
+	padding-top: 4px;
+	padding-right: 15px;
+}
+
+.member {
+	float: right;
+	padding-top: 4px;
+	font-weight: bold;
+	
+}
+
+.login {
+	float: right;
+	padding-right: 15px;
+}
+
+.register {
+	float: right;
+	padding-right: 5px;
+	
+}
+
+
+/*----Header---*/
+
+#header {
+	background-color: none;
+	height: 80px;
+
+}
+#logo {
+	float: left;
+	padding-top: 5px;
+
+}
+
+#search {
+	float: right;
+	padding-top: 15px;
+}
+
+input[type = "search"] {
+	width: 600px;
+	height: 50px;
+	margin-right: 0px;
+	font-size:14px;
+	color: #a5a5a5;
+}
+
+select {
+	height: 50px;
+	margin: 0px 0px;
+}
+
+input[type = "submit"] {
+	height: 50px;
+	background-color: #019807;
+	color: white;
+
+}
+input[type = "submit"]:hover {
+	background-color: #026f06;
+	cursor:pointer;
+}
+
+/*---Menu nav---*/
+
+#nav {
+	width: 960px;
+	height: 40px;
+	float: left;
+	border-top: 1px solid #a5a5a5;
+	border-bottom: 1px solid #a5a5a5;
+	margin-top: 10px;
+	text-align: left;
+}
+
+#nav ul li {
+	display: inline;
+	padding-right: 20px;
+	padding-left: 20px; 
+	border-right: 1px solid #a5a5a5;
+}
+
+#nav ul li a {
+	padding-top: 5px;
+	font-size: 14px;
+
+}
+
+#nav ul li a:hover {
+	color: #019807;
+}
+
+/*--Slide Show--*/
+#slide {
+	padding-top: 20px;
+	width: 960px;
+	height: 340px;
+	position: relative;
+	clear: both;
+	
+}
+
+.col1 {
+	width:650px;
+	height: 340px;
+	position:relative;
+	float: left;
+	box-shadow: 2px 2px 0.2px #a5a5a5;
+}
+.col2 {
+	width:300px;
+	height: 250px;
+	position: relative;
+	float: right;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+.col3 {
+	width:300px;
+	height: 80px;
+	position: relative;
+	float: right;
+	padding-left: 0;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+/*-----Filter--------*/
+#filterbar {
+	padding-top: 23px;
+	height: 20px;
+	border-bottom: 1px dotted #a5a5a5;
+	position: relative;
+}
+.filter p {
+	padding-left: 0;
+	display: inline;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: 13px;
+}
+
+
+.filter {
+	float: left;
+	position: relative;
+}
+.filter span {
+	padding-left: 20px;
+}
+
+.filter select {
+	height: 20px;
+}
+
+.filter form {
+	display: inline;
+}
+
+.social {
+	float: right;
+	padding-bottom: 0px;
+	position: relative;
+}
+.social img {
+	height: 22px;
+}
+
+/* -----Wrap------*/
+
+#wrap {
+	margin-top: 10px;
+	width: 470px;
+	height: 550px;
+	background-color: #666;
+	clear: both;
+} 
