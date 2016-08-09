@@ -56,7 +56,7 @@
 <div id = "nav">
 	<ul>
 		<li><a href="#">Home</a></li>
-		<li><a href="#">Promotion</a></li>
+		<li><a href="detail.html">Promotion</a></li>
 		<li><a href="#">Color Template</a></li>
 		<li><a href="#">Colum Template</a></li>
 		<li><a href="#">Type Template</a></li>
@@ -131,132 +131,145 @@
 
 <div class = "clear"></div>
 <!--Content wrap -->
-<div id = "wrap">
-	<div class = "product">
-		<div class = "col4"></div>
-		<div class = "col5"></div>
-		<div class = "col6"></div>
-		<div class = "col7"></div>
-	</div>
-	<div class = "info">
-		<div class = "col8">
-		<h2>Đây là website về Thời Trang</h2>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non malesuada libero. Maecenas vestibulum elit sit amet pellentesque aliquam. Integer cursus eleifend ante ac lacinia. Aenean tempus eget ante vel ornare. Proin nulla eros, pretium sed orci et, ultricies tempus nisi. Nam id urna quis tortor consectetur imperdiet sed vitae elit. Fusce molestie diam leo, quis aliquet quam vehicula congue. Maecenas et diam a purus condimentum suscipit. Nunc ut nibh lectus. Nullam convallis accumsan imperdiet. Nunc a porta sem. Vestibulum id sapien quis metus efficitur tempor ut et eros.
-		</div>
-		<div class = "col9">
-			<h2>MUA THEME NÀY</h2>
-			<div class = "payout">Trả trước:  
-				<form action = "" method = "">
-					<select name = "pay">
-						<option value = "0">Pay out</option>
-						<option value = "1">30%</option>
-						<option value = "2">50%</option>
-						<option value = "3">100%</option>
-					</select>
-				</form>
-			</div>
-			<div class = "permonth">Trả góp:  
-				<form action = "" method = "">
-					<select name = "permonth">
-						<option value = "0">Per month</option>
-						<option value = "1">Intro Company</option>
-						<option value = "2">Business</option>
-						<option value = "3">Shop cart </option>
-					</select>
-				</form>
-			</div>
+<?php 
+include ('function/product.php');
+//include ('function/connecdb.php');
+?>
+	
+		<?php
+			foreach ($arr_product as $key => $val) {
+				echo "<div id = 'content'>";
+					echo "<div class = 'product'>";
+						echo "<div class = 'col4'><a href = '#'><img src =". $val->img." /></a></div>";
 
-			<div class = "sumpay">Total:  
-				<form action = "" method = "">
-				<input type="number" name="sumpay" value="2,500,000 VNĐ" />
-				</form>
-			</div>
+						echo "<div class = 'col5'><a href = '#'><img src =". $val->thumb1." /></a></div>";
 
-			<div class = "submit">  
-				<form action = "" method = "">
-				<input type="submit" name="submit" value="Mua Ngay->" />
-				</form>
-			</div>
+						echo "<div class = 'col6'><a href = '#'><img src =". $val->thumb2." /></a></div>";
 
-		</div>
-	</div>
-</div>
-
-
-<div id = "wrap2">
-	<div class = "product">
-		<div class = "col4"></div>
-		<div class = "col5"></div>
-		<div class = "col6"></div>
-		<div class = "col7"></div>
-	</div>
-	<div class = "info">
-		<div class = "col8">
-		<h2>Đây là website về Thời Trang</h2>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non malesuada libero. Maecenas vestibulum elit sit amet pellentesque aliquam. Integer cursus eleifend ante ac lacinia. Aenean tempus eget ante vel ornare. Proin nulla eros, pretium sed orci et, ultricies tempus nisi. Nam id urna quis tortor consectetur imperdiet sed vitae elit. Fusce molestie diam leo, quis aliquet quam vehicula congue. Maecenas et diam a purus condimentum suscipit. Nunc ut nibh lectus. Nullam convallis accumsan imperdiet. Nunc a porta sem. Vestibulum id sapien quis metus efficitur tempor ut et eros.
-		</div>
-		<div class = "col9">
-			<h2>MUA THEME NÀY</h2>
-			<div class = "payout">Trả trước:  
-				<form action = "" method = "">
-					<select name = "pay">
-						<option value = "0">Pay out</option>
-						<option value = "1">30%</option>
-						<option value = "2">50%</option>
-						<option value = "3">100%</option>
-					</select>
-				</form>
-			</div>
-			<div class = "permonth">Trả góp:  
-				<form action = "" method = "">
-					<select name = "permonth">
-						<option value = "0">Per month</option>
-						<option value = "1">Intro Company</option>
-						<option value = "2">Business</option>
-						<option value = "3">Shop cart </option>
-					</select>
-				</form>
-			</div>
-
-			<div class = "sumpay">Total:  
-				<form action = "" method = "">
-				<input type="number" name="sumpay" value="2,500,000 VNĐ" />
-				</form>
-			</div>
-
-			<div class = "submit">  
-				<form action = "" method = "">
-				<input type="submit" name="submit" value="Mua Ngay->" />
-				</form>
-			</div>
-
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
+						echo "<div class = 'col7'><a href = '#'><img src =". $val->thumb3." /></a></div>";
+					echo "</div>";
+						
+					echo "<div class = 'info'>";
+						echo "<div class = 'col8'><h2>".$val->name."</h2>".$val->info."</div>";
+						echo "<div class = 'col9'><h2>MUA THEME NÀY</h2>
+								<div class = 'payout'>Trả trước: 
+									<form action = '' method = ''>
+										<select name = 'pay'>
+											<option value = '0'>".$val->percent."%"."</option>
+										</select>
+									</form>
+								</div>
+								<div class = 'permonth'>Trả góp: 
+									<form action = '' method = ''>
+										<select name = 'permonth'>
+											<option value = '0'>".$val->paymethod."</option>
+										</select>
+									</form>
+								</div>
+								<div class = 'sumpay'>Total:  
+									<form action = '' method = ''>
+										<input type='number' name='sumpay' value='2,500,000 VNĐ' />
+									</form>
+								</div>
+								<div class = 'submit'>  
+									<form action = '' method = ''>
+										<input type = 'submit' name = 'submit' value = 'Mua Ngay->' />
+									</form>
+								</div>
+							</div>";
+					echo "</div>";
+				echo "</div>";
+			}
+		?>
 <!--End content wrap-->
 
+<div class="clear"></div>
 <!--Slide bottom-->
-<div id = "slidebottom"></div>
+<div id = "slidebottom">
+	<div class="title">
+		<p>Hot theme:</p>
+	</div>
+	<marquee>
+		<?php 
+			foreach ($arr_product as $key => $val) {
+				echo "<div class='itemtheme'><img src =".$val->img." /></div>";
+			}
+
+		?>
+	</marquee>
+</div>
 <!--End slide bottom-->
 
 <!--News-->
-<div id = "news"></div>
+<div id = "news">
+	<?php
+	include ('function/new.php');
+	foreach ($array_new as $key => $item) {
+		echo "<div class = 'col10'><h2>".$item->title."</h2>
+				<ul>
+					<li>".$item->title."</li>
+				</ul>
+			</div>";
+		echo "<div class = 'col11'><h2>".$item->title."</h2>
+				<ul>
+					<li>".$item->title."</li>
+				</ul>
+			</div>";
+		echo "<div class = 'col12'><h2>".$item->title."</h2>
+				<ul>
+					<li>".$item->title."</li>
+				</ul>
+			 </div>";
+	}
+	
+	?>
+
+
+</div>
 <!--End news-->
-
+<div class="clear"></div>
 <!--Support-->
-<div id = "support"></div>
+<div id = "title-support">
+	<h2>Các chuyên viên tư vấn của chúng tôi</h2>
+	<span class = "text-support"><i>Luôn sẵn sàng hỗ trợ bạn</i></span>
+</div>
+<div id = "support">
+	<div class="support">
+		<img src="upload/img/support/avata.png" /><br />
+		<p>Nguyễn Thị Huyền</p>
+		<p>0989 525 555</p>
+		<img src="upload/img/icon/skype.png">
+
+	</div>
+	<div class="support">
+		<img src="upload/img/support/avata2.png" /><br />
+		<p>Phạm Linh Thảo</p>
+		<p>0989 525 455</p>
+		<img src="upload/img/icon/skype.png">
+	</div>
+	<div class="support">
+		<img src="upload/img/support/avata3.png" /><br />
+		<p>Trần Bảo Trâm</p>
+		<p>0977 322 333</p>
+		<img src="upload/img/icon/skype.png">
+	</div>
+	<div class="support-end">
+		<img src="upload/img/support/avata.png" /><br />
+		<p>Nguyễn Thị Huyền</p>
+		<p>0989 525 555</p>
+		<img src="upload/img/icon/skype.png">
+	</div>
+	
+
+	
+</div>
 <!--End support-->
-
+<div class="clear"></div>
 <!--Footer-->
-<div id = "footer"></div>
+<div id = "footer">
+	<p>&copy; PQH-Gopadaco</p>
+</div>
 <!--End footer-->
-
 
 
 </body>
